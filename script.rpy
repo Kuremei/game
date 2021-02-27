@@ -1568,6 +1568,7 @@ label kike:
             l "Ya es tarde..."
             n "Se levantó de la silla y se dirigió a la puerta."
             l "Será mejor que descanses... Mañana podría ser el juicio..."
+            n "F"
             l "Espero que estés lista..."
             play sound "puerta.mp3"
             n "Abrió la puerta."

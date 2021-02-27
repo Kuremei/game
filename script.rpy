@@ -8567,6 +8567,7 @@ label ba:
     l "Gracias por quedarte a mi lado."
     n "-Dijo besando mi mano-"
     l "Te amo."
+    m "xD"
     n "-Confesó con una sonrisa a lo cual me sonrojé-"
     n "Solté una lágrima, su mano cálida rozó mi mejilla limpiándola, me brindó otra sonrisa."
     n "Y sin lastimarme, me abrazó, a lo que terminé llorando al recordar una parte de lo que había sucedido."

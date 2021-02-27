@@ -1566,6 +1566,7 @@ label kike:
             show Levi normal2 s
             with dissolve
             l "Ya es tarde..."
+            n "f"
             n "Se levantó de la silla y se dirigió a la puerta."
             l "Será mejor que descanses... Mañana podría ser el juicio..."
             l "Espero que estés lista..."

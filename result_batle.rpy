@@ -12,7 +12,7 @@ label lose:
 
 
     with dissolve
-    "HAS PERDIDO LA BATALLA"
+    "¡Derrota!"
     return
 
 
@@ -23,5 +23,5 @@ label win:
     hide eren with dissolve
     pause 1
 
-    "VICTORIA!!!"
+    "¡Victoria!"
     jump siguiente

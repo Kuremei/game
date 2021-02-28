@@ -221,24 +221,24 @@ label capitulo1:
     hide text
     with dissolve
     $allocate_screen("{color=#FFFFFF}¡Sube el volumen para escuchar conversaciones!{/color}")
-    show text "{size=+30}{color=#ffc30f}*¿Sasha ya ha despertado?*{/size}{/color}" at truecenter
+    show text "{size=+30}{color=#ffc30f}¿Sasha ya ha despertado?{/size}{/color}" at truecenter
     with dissolve
     pause 26
     hide text
     scene img1
     show chisme
     with dissolve
-    show text "{size=+30}{color=#000000}*Sasha: ¡Ah! ¡Hola!*{/size}{/color}" at truecenter
+    show text "{size=+30}{color=#000000}Sasha: ¡Ah! ¡Hola!{/size}{/color}" at truecenter
     with dissolve
     pause 1
     hide text
     with dissolve
-    show text "{size=+30}{color=#000000}*Sasha: ¿Me buscabas por algo?*{/size}{/color}" at truecenter
+    show text "{size=+30}{color=#000000}Sasha: ¿Me buscabas por algo?{/size}{/color}" at truecenter
     with dissolve
     pause 3
     hide text
     with dissolve
-    show text "{size=+30}{color=#000000}*Eren: ¡Aquí estás! ¡Por fin!*{/size}{/color}" at truecenter
+    show text "{size=+30}{color=#000000}Eren: ¡Aquí estás! ¡Por fin!{/size}{/color}" at truecenter
     pause 1
     with dissolve
     hide text
@@ -248,17 +248,17 @@ label capitulo1:
     pause 1
     hide text
     with dissolve
-    show text "{size=+30}{color=#000000}*Sasha: Tengo que... ¡Sí! Tengo que... ¡Hacer algo! ¡Algo importante!*{/size}{/color}" at truecenter
+    show text "{size=+30}{color=#000000}Sasha: Tengo que... ¡Sí! Tengo que... ¡Hacer algo! ¡Algo importante!{/size}{/color}" at truecenter
     with dissolve
     pause 3
     hide text
     with dissolve
-    show text "{size=+30}{color=#000000}*Eren: ¿Qué te pasa, Sasha? ¿Te duelen los dientes? De repente suenas rara...*{/size}{/color}" at truecenter
+    show text "{size=+30}{color=#000000}Eren: ¿Qué te pasa, Sasha? ¿Te duelen los dientes? De repente suenas rara...{/size}{/color}" at truecenter
     with dissolve
     pause 8
     hide text
     with dissolve
-    show text "{size=+30}{color=#000000}*Sasha: ¡...! Eh... O sea... ¿Vale? Vamos a bordar este entrenamiento. ¿O no? Y después la hora de comer.*{/size}{/color}" at truecenter
+    show text "{size=+30}{color=#000000}Sasha: ¡...! Eh... O sea... ¿Vale? Vamos a bordar este entrenamiento. ¿O no? Y después la hora de comer.{/size}{/color}" at truecenter
     with dissolve
     pause 15
     hide text
@@ -266,7 +266,7 @@ label capitulo1:
     with dissolve
     show screen quick_menu
     stop music
-    m "{cps=24}*...*{/cps}"
+    m "{cps=24}...{/cps}"
     with fade
     play music "musica normal.mp3" loop
     show Shasha Feliz
@@ -334,7 +334,7 @@ label capitulo1:
     e "¿Cuántas veces te lo he dicho? ¡No soy tu hermano pequeño al que tienes que proteger! Así que déjalo ya, ¿vale?"
 
 menu:
-    "(¿Qué respondo?)"
+    "¿Qué debía responder?"
 
     "...":
         show Eren normal s
@@ -344,7 +344,7 @@ menu:
             ErenAmizade += 10
         call chamarBarraMais(ErenAmizade)
         with dissolve
-        n "Desde hace tiempo Eren comenzó a tratarme de esa forma, me gritaba, me empujaba, me hacía a un lado."
+        n "Desde hace tiempo Eren comenzó a tratarme de esa forma: me gritaba, me empujaba, me hacía a un lado..."
         jump correc
 
     "¡Pero yo...!":
@@ -380,14 +380,14 @@ n "No lo entendía, lo único que quería era protegerlo."
 n "Pero a él le molestaba eso; yo sabía que Eren no era un niño, solo quería cumplir parte de mi promesa con Carla."
 n "La de proteger a Eren incluso a costa de mi vida, pero últimamente sus acciones me afectaban de cierta manera."
 n "Al punto de perder esa personalidad que tanto me caracterizaba estando frente a otras personas."
-n "Con él me volvía débil, me sentía frágil y a punto de romperme, como un jarrón que cae al piso."
+n "Con él me volvía débil, me sentía frágil y a punto de romperme, como un jarrón que cae al suelo."
 n "Sus palabras hirientes sonaban todo el tiempo en mi cabeza."
 n "Y me hacían pensar varias veces qué era lo que estaba haciendo mal."
-n "Y claramente me preocupaba mucho y por eso siempre estaba pendiente de él."
+n "Claramente me preocupaba mucho y por eso siempre estaba pendiente de él."
 label correc:
 n "El silencio era tan incómodo que me daban ganas de salir de ahí corriendo."
 n "Ser el centro de atención era una de las sensaciones que más odiaba."
-n "Tan solo escuchaba murmullos de la gente, pero no sabía que decían. Sentí que explotaría en cualquier momento."
+n "Tan solo escuchaba murmullos de la gente, pero no sabía qué decían. Sentí que explotaría en cualquier momento."
 n "Estaba a punto de ponerme de pie cuando el comandante Erwin entró al comedor."
 hide Eren normal s
 stop music
@@ -420,7 +420,7 @@ a "Mikasa..."
 with fade
 show Armin disgustado sce
 with dissolve
-a "¿Éstas bien?"
+a "¿Estás bien?"
 m "Estoy bien, Armin, no te preocupes."
 n "Esbocé una pequeña sonrisa forzada para hacerle sentir mejor."
 show Armin enojado s
@@ -438,7 +438,7 @@ n "Esta vez no era la excepción, lo volteé a ver y él me miraba con esos azul
 n "Normalmente con cualquier persona hubiese pasado de largo y me hubiera alejado, pero con Armin era diferente."
 n "Tenía que darle una respuesta."
 
-"(¿Qué respondo?)"
+"¿Qué debía responder?"
 show Armin enojado s
 with dissolve
 
@@ -456,7 +456,7 @@ menu:
         n "Por fin pude decirlo después de dar un largo suspiro."
         jump buena
 
-    "Te equívocas":
+    "Te equivocas":
         show Armin enojado sce
         with dissolve
         centered "{size=+25}{color=#A8A638}¡Uy! ¡Has perdido puntos!{color=#f00}-10p{/color}¡Le has mentido a Armin!{/size}{/color}"
@@ -541,19 +541,19 @@ menu:
 
     "Me gustaría hacer equipo con otra persona.":
         n "Me maldecía internamente mientras pronunciaba esas palabras."
-        k "Bien, entonces harás pareja con Arlert."
+        k "Bien, entonces harás equipo con Arlert."
         play sound "arleth.mp3"
-        k "¡Arlert! ¡¿Esta aquí?!"
+        k "¡Arlert! ¡¿Estás aquí?!"
         a "... ¡Sí!"
         n "Pensaba que no sería posible hacer el cambio."
-        n "Además le prometí a Armin que no volvería a pasar."
-        n "Resignada, me dirigí hacia donde estaba Armin, en cuanto vio que me acerqué a él..."
+        n "Además, le prometí a Armin que no volvería a pasar."
+        n "Resignada, me dirigí hacia donde estaba Armin. En cuanto vio que me acerqué a él..."
         with fade
         show Armin disgustado c
         with dissolve
-        a "Mikasa... ¿Estas bien? ¿Tienes fiebre?"
+        a "Mikasa... ¿Estás bien? ¿Tienes fiebre?"
         n "Tocó mi frente preocupado."
-        m "No, estoy bien. No te preocupes."
+        m "No te preocupes, estoy bien."
         a "..."
         m "Tus palabras me han hecho reflexionar."
         show Armin feliz c
@@ -585,7 +585,7 @@ menu:
         a "¡...!"
         hide Armin soprendido1 s
         with dissolve
-        n "(¿Qué acabo de escuchar?)"
+        n "¿Qué acababa de escuchar?"
         n "Me hinqué en el suelo mientras me sobaba la mejilla."
         n "Estaba en shock."
         show Armin disgustado c
@@ -614,7 +614,7 @@ menu:
         m "¿Eren?"
         with fade
         e "Mikasa, te reto. Apuesto a que no me vences."
-        n "Todos tenían caras de sorpresa. Sabía que Eren me estaba poniendo a prueba."
+        n "Todos tenían cara de sorpresa. Sabía que Eren me estaba poniendo a prueba."
         n "Realmente debía demostrarle que, sin mí, él moriría. Adopté una posición defensiva, sabía que me atacaría."
         with dissolve
         scene pasteur_day
@@ -646,13 +646,13 @@ menu:
         n "Cuando ya teníamos el campo abierto..."
         show Eren enojado3 c
         with dissolve
-        e "¡No trates de retenerte! ¿Quieres?"
+        e "No te contengas, ¿quieres?"
         hide Eren enojado3 c
         with dissolve
         jump co
 
-    "No señor... Ninguna.":
-        n "(Bendita mi suerte)"
+    "No señor, ninguno.":
+        n "Bendita mi suerte."
         k "¡Bien! ¡Entonces ve con tu compañero y comienza el entrenamiento!"
         n "Habló rudamente y se alejó para nombrar a las siguientes parejas."
         n "Solté un gran suspiro."
@@ -704,9 +704,9 @@ show screen life_enemy
 scene pelea
 with fade
 
-"Prepárate para pelear"
+"Prepárate para pelear."
 e "¿Lista?"
-m "Sí"
+m "Sí."
 
 label fight:
     scene pasteur_day
@@ -743,12 +743,12 @@ elif enemy_atack == "Defiende":
         pause .5
         repeat
     $ life_e = change_stat(life_e, +5)
-    "¡Se detiene!"
+    "¡Detiene el golpe!"
 
-"Mi turno"
+"Mi turno."
 
 menu:
-    "Atacar":
+    "Atacar.":
         $ life_e = change_stat(life_e, -10)
         play sound "cuerpo.mp3"
         show pelea:
@@ -758,9 +758,9 @@ menu:
             linear 1.0 alpha 1.0
             pause .5
             repeat
-        m "¡JA!"
+        m "¡Ja!"
 
-    "Defenderse":
+    "Defenderse.":
         $ life = change_stat (life, +5)
         m "¡Vas a perder, Eren!"
 

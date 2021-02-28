@@ -302,7 +302,7 @@ label capitulo1:
     n "Parece que el hecho de que haya carne como desayuno..."
     n "animó a todos a levantarse temprano con tal de recibir su porción y no quedarse con las ganas."
     n "Ojeé todo el comedor en busca de una persona, Eren."
-    n "Me acerqué a la mesa en donde estaba Eren sentado junto con Armin y Connie."
+    n "Me acerqué a la mesa en la que estaba Eren sentado junto con Armin y Connie."
     $contador = 0
     show Eren normal s
     with dissolve
@@ -339,7 +339,7 @@ menu:
     "...":
         show Eren normal s
         with dissolve
-        centered "{size=+25}{color=#A8A638}¡Bien, has obtenido:{color=#f00}+10p{/color} por calmar a Eren!{/size}{/color}"
+        centered "{size=+25}{color=#A8A638}¡Bien, has ganado {color=#f00}+10 puntos{/color} por calmar a Eren!{/size}{/color}"
         python:
             ErenAmizade += 10
         call chamarBarraMais(ErenAmizade)
@@ -350,13 +350,13 @@ menu:
     "¡Pero yo...!":
         show Eren enojado s
         with dissolve
-        centered "{size=+25}{color=#A8A638}¡Uy! ¡Has perdido puntos!{color=#f00}-10p{/color}¡Has hecho enojar a Eren!{/size}{/color}"
+        centered "{size=+25}{color=#A8A638}¡Uy! ¡Has perdido {color=#f00}-10 puntos{/color} por hacer enojar a Eren!{/size}{/color}"
         python:
             ErenAmizade -= 10
         call chamarBarraMenos(ErenAmizade)
         play sound "oi.mp3"
         with hpunch
-        n "Recalqué colocando mis manos sobre sus hombros, pero él las quitó de inmediato de una manera brusca."
+        n "Recalqué colocando mis manos sobre sus hombros, pero él las quitó de inmediato bruscamente."
         n "Me miraba con desprecio y hasta podría decir que con odio."
         play sound "se realista.mp3"
         e "¡Sé realista, Mikasa!"
@@ -377,17 +377,17 @@ menu:
 
 label incorrec:
 n "No lo entendía, lo único que quería era protegerlo."
-n "Pero a él le molestaba eso; yo sabía que Eren no era un niño, solo quería cumplir parte de mi promesa con Carla."
-n "La de proteger a Eren incluso a costa de mi vida, pero últimamente sus acciones me afectaban de cierta manera."
+n "Pero a él le molestaba eso. Yo sabía que Eren no era un niño, solo quería cumplir parte de mi promesa con Carla."
+n "Proteger a Eren incluso a costa de mi vida, pero últimamente sus acciones me afectaban de cierta manera."
 n "Al punto de perder esa personalidad que tanto me caracterizaba estando frente a otras personas."
-n "Con él me volvía débil, me sentía frágil y a punto de romperme, como un jarrón que cae al suelo."
+n "Con él me volvía débil; me sentía frágil y a punto de romperme, como un jarrón que cae al suelo."
 n "Sus palabras hirientes sonaban todo el tiempo en mi cabeza."
 n "Y me hacían pensar varias veces qué era lo que estaba haciendo mal."
 n "Claramente me preocupaba mucho y por eso siempre estaba pendiente de él."
 label correc:
 n "El silencio era tan incómodo que me daban ganas de salir de ahí corriendo."
 n "Ser el centro de atención era una de las sensaciones que más odiaba."
-n "Tan solo escuchaba murmullos de la gente, pero no sabía qué decían. Sentí que explotaría en cualquier momento."
+n "Tan solo escuchaba los murmullos de la gente, pero no sabía qué decían. Sentí que explotaría en cualquier momento."
 n "Estaba a punto de ponerme de pie cuando el comandante Erwin entró al comedor."
 hide Eren normal s
 stop music
@@ -399,17 +399,16 @@ r "¡Diríjanse todos al campo para comenzar con las agrupaciones!"
 show Erwin normal c
 with dissolve
 n "Así, todos empezaron a ponerse de pie y a salir del comedor para iniciar el entrenamiento."
-n "Agradecí internamente al comandante Erwin por entrar en el último momento"
-n "y salvarme de una situación realmente vergonzosa."
+n "Agradecí internamente al comandante Erwin por entrar, me había salvado de una situación realmente vergonzosa."
 hide Erwin normal c
 hide Errwin normal cba
 with dissolve
 play music "miss the way u played.mp3"
 n "No pude ponerme de pie."
 n "Aún me sentía avergonzada y no me había dado cuenta de que la mayoría de los cadetes ya habían salido."
-n "Me puse de pie lentamente y comencé a caminar a paso lento para salir de ese lugar."
+n "Me levanté lentamente y comencé a caminar a paso lento para salir de ese lugar."
 n "Aún no creía la situación por la que acababa de pasar."
-n "Pero algo me sacó de mis pensamientos, sentí la mano de alguien reposar suavemente sobre mi hombro izquierdo."
+n "Pero algo me sacó de mis pensamientos. Sentí la mano de alguien reposar suavemente sobre mi hombro izquierdo."
 n "Volteé para ver de quién se trataba y bajé la mirada al descubrirlo."
 $contador = 0
 python:
@@ -434,21 +433,21 @@ n "Armin es muy listo, es un gran amigo para mí y realmente me conoce a la perf
 n "Realmente conocer a Armin cambió mi vida."
 n "Él era la única persona a la que podía acudir cuando todo me salía mal."
 n "Aunque muchas veces era él quien intuía las cosas y hablaba conmigo."
-n "Esta vez no era la excepción, lo volteé a ver y él me miraba con esos azulados ojos fijamente esperando una respuesta."
+n "Esta vez no era la excepción, volteé a verlo y él me miraba con esos azulados ojos fijamente esperando una respuesta."
 n "Normalmente con cualquier persona hubiese pasado de largo y me hubiera alejado, pero con Armin era diferente."
 n "Tenía que darle una respuesta."
+a "¡Te conozco y sé que las palabras de Eren te afectaron!"
 
-"¿Qué debía responder?"
 show Armin enojado s
 with dissolve
 
 menu:
-    a "¡Te conozco y sé que las palabras de Eren te afectaron!"
+    "¿Qué debía responder?"
 
     "Sí...":
         show Armin disgustado sce
         with dissolve
-        centered "{size=+25}{color=#A8A638}¡Bien, has obtenido:{color=#f00}+10p{/color} por decir la verdad!{/size}{/color}"
+        centered "{size=+25}{color=#A8A638}¡Bien, has obtenido {color=#f00}+10 puntos{/color} por decir la verdad!{/size}{/color}"
         python:
             ArminAmizade2 += 10
         call chamarBarraMais2(ArminAmizade2)
@@ -456,17 +455,17 @@ menu:
         n "Por fin pude decirlo después de dar un largo suspiro."
         jump buena
 
-    "Te equivocas":
+    "Te equivocas.":
         show Armin enojado sce
         with dissolve
-        centered "{size=+25}{color=#A8A638}¡Uy! ¡Has perdido puntos!{color=#f00}-10p{/color}¡Le has mentido a Armin!{/size}{/color}"
+        centered "{size=+25}{color=#A8A638}¡Uy! ¡Has perdido {color=#f00}-10 puntos{/color} por mentir a Armin!{/size}{/color}"
         python:
             ArminAmizade2 -= 10
         call chamarBarraMenos2(ArminAmizade2)
         with dissolve
         show Armin disgustado sce
         with dissolve
-        a "¿?"
+        a "¿Eh?"
         m "Con tal de proteger a Eren estoy dispuesta a soportar sus actitudes."
         n "¿De verdad estaba dispuesta?"
         show Armin enojado s
@@ -474,8 +473,8 @@ menu:
         a "Eso no está bien, Mikasa... Estás dando todo de ti para protegerlo y él no lo reconoce ni te lo agradece..."
         show Armin disgustado sce
         with dissolve
-        a "Al contrario: te lo paga insultándote y haciéndote menos frente a los demás..."
-        n "Nuevamente tenía razón"
+        a "Al contrario: te lo paga insultándote y menospreciándote frente a los demás..."
+        n "Nuevamente tenía razón."
         hide screen barraAmizade2
         with dissolve
         jump media
@@ -504,7 +503,7 @@ n "Él siempre es honesto y dice las cosas directas aunque lastimen a las person
 
 label media:
     n "Armin, más que nadie, sabía que mi relación con Eren había cambiado mucho y era el único que se percataba de todo lo que sucedía entre nosotros."
-    n "Por ello, sus palabras me hacían reflexionar las cosas."
+    n "Por ello, sus palabras me hacían reflexionar."
     n "Ciertamente, desde hace tiempo, Christa, Jean, Connie e incluso Sasha me habían dicho que mi relación con Eren no era buena y debía parar."
     n "Dijeron que debía dejar de ser tan cercana y de estar siempre pendiente de él, que debía darle su espacio y comprenderlo mejor."
     n "Yo creía que lo estaba haciendo bien garantizando su seguridad, pero, con tan solo acercarme a él, recibía malas caras, gestos y acciones de su parte."
@@ -520,7 +519,7 @@ label media:
     show lili
     with dissolve
     stop music
-    n "Armin no volvió a hablar en el camino, tan solo bajó la mirada, sabía que no estaba conforme con lo que yo le había dicho."
+    n "Armin no volvió a hablar en el camino, tan solo bajó la mirada. Sabía que no estaba conforme con lo que yo le había dicho."
     n "Y por una parte yo tampoco me sentía conforme conmigo misma."
     n "Pero quería evitar tocar ese tema a toda costa, así que aceleré el paso para llegar al campo justo cuando estaban tomando lista."
     play music "medieval.mp3"
@@ -656,7 +655,7 @@ menu:
         k "¡Bien! ¡Entonces ve con tu compañero y comienza el entrenamiento!"
         n "Habló rudamente y se alejó para nombrar a las siguientes parejas."
         n "Solté un gran suspiro."
-        n "Definitivamente hoy no era mi día."
+        n "Definitivamente ese no era mi día."
         n "¿Por qué, de entre todos los reclutas, tuvieron que ponerme como pareja a Eren?"
         n "La vida me odiaba."
         n "Resignada, me dirigí hacia donde estaba Eren."
@@ -674,16 +673,16 @@ menu:
         e "Lo haré solo porque es un entrenamiento."
         show Eren enojado3 c
         with dissolve
-        e "¡No trates de protegerme en un entrenamiento! ¿Quieres?"
+        e "No trates de protegerme en un entrenamiento, ¿quieres?"
         show Eren normal c
         with dissolve
         n "No le dije nada, solo lo miré con recelo, recordando lo que me había hecho en la mañana; realmente estaba molesta."
         n "El hecho de que se quejara por ser su compañera me molestaba aún más."
         show Eren serio c
         with dissolve
-        n "Realmente debía demostrarle que, sin mí, él moriría. Adopté una posición defensiva, sabía que me atacaría."
+        n "Realmente debía demostrarle que, sin mí, él moriría. Adopté una posición defensiva sabiendo que me atacaría."
         n "Podía verlo en esos ojos azul verdosos que no me quitaban la mirada de encima."
-        n "Hasta parecía que habían quitado su brillo y que se habían opacado de lo molesto que estaba."
+        n "Hasta parecía que habían perdido su brillo y que se habían opacado de lo molesto que estaba."
         hide Eren serio c
         with dissolve
         jump co
@@ -772,8 +771,8 @@ n "Sin más, Eren me atacó. Lanzó un puñetazo directo a mi cara que logré es
 n "Era más rápida que él. Esbocé una mirada triunfadora, lo cual le molestó."
 play sound "cuerpo.mp3"
 n "Nuevamente se acercó a mí corriendo y lanzando una serie de patadas y puñetazos dirigidos a diferentes partes de mi cuerpo."
-n "Pude esquivarlos fácilmente."
-n "Y algunos otros utilicé para contraatacar, tenía la ventaja en mis manos."
+n "Algunos los esquivé fácilmente."
+n "Y otros los utilicé para contraatacar, tenía la ventaja en mis manos."
 scene pasteur_day
 n "Ágilmente, levanté mi cuerpo en el aire y lancé una patada directa al estómago de Eren."
 n "Aquello provocó que este cayera al suelo y se quejara de dolor."
@@ -784,12 +783,11 @@ show Eren preocupado c
 with dissolve
 n "Se quejó totalmente molesto mientras se sobaba su estómago."
 n "Terminó de enojarme."
-n "Me había aguantado varias, pero ya había rebasado mi límite."
-m "¿¡Pero qué tonterías éstas diciendo!?"
+n "Me había estado aguantando, pero ya había rebasado mi límite."
+m "¿¡Pero qué tonterías estás diciendo!?"
 show Eren serio c
 with dissolve
-n "Grité totalmente eufórica, nadie me iba a sacar de ese estado."
-m "¿¡Dices que yo soy la ruda cuando tu empezaste a lanzar tus ataques directos a mi cara sin piedad!?"
+m "¿¡Dices que yo soy la ruda cuando tú empezaste a lanzar tus ataques directos a mi cara sin piedad!?"
 m "Eres bueno para quejarte porque yo sí logré darte un golpe..."
 m "¡Pero tú no lo lograste!"
 $contador = 35
@@ -798,17 +796,17 @@ python:
 call chamarBarraMenos(ErenAmizade)
 show Eren enojado c
 with dissolve
-n "Me miró con odio, lo sé, le había dado justo en su orgullo."
+n "Me miró con odio, lo sabía, le había dado justo en su orgullo."
 n "Pero eso no me importaba en ese momento."
-n "Odiaba que se comportara de esa manera tan molesta de no aceptar las cosas."
+n "Odiaba que no reconociese las cosas."
 hide screen barraAmizade
 with dissolve
 show Eren serio c
 with dissolve
-n "Se levantó sin despegar la mirada de mí, se colocó nuevamente en pose de pelea y comenzó a correr hacia mí."
-m "¡Sigues insistiendo Eren... pero no vas a lograrlo!"
+n "Se levantó sin dejar de mirarme, se colocó nuevamente en pose de pelea y comenzó a correr hacia mí."
+m "¡Sigues insistiendo, Eren... pero no vas a lograrlo!"
 n "Él se acercaba cada vez más."
-m "¡Vas a perder Eren!"
+m "¡Vas a perder, Eren!"
 n "Grité de manera victoriosa mientras me colocaba en pose de defensa."
 show Eren enojado2 c
 with dissolve
@@ -817,7 +815,7 @@ show Eren serio c
 with dissolve
 n "Gritó lleno en cólera mientras corría hacia mí."
 n "Estaba lista para recibir el impacto, defenderme y contraatacar."
-n "Pero, de repente, Eren paró en seco a 30 cm de mí, me lanzó una mirada victoriosa y gritó:"
+n "Pero, de repente, Eren paró en seco a un palmo de mí y me lanzó una mirada victoriosa."
 show Eren alegre c
 with dissolve
 e "¿¡Quién es la que va a perder, Mikasa!?"
@@ -833,15 +831,15 @@ with fade
 play sound "corazon.mp3"
 n "Todo pasó muy rápido."
 with pixellate
-n "En cuanto recuperé el equilibrio de mi cuerpo logré divisar la forma titán de Eren emergiendo de la cantidad de vapor que salía del lugar."
+n "En cuanto recuperé el equilibrio, logré divisar la forma titán de Eren emergiendo del vapor que salía del lugar."
 with dissolve
 show titan
 with fade
-n "Comencé a ponerme de pie mientras intentaba reaccionar lo que estaba pasando."
+n "Comencé a ponerme de pie mientras intentaba reaccionar a lo que estaba pasando."
 with pixellate
 n "¿Por qué Eren se había transformado en titán?"
 n "El rugido de aquel titán me sacó de mis pensamientos."
-n "Volteé a verlo y vi que tenía su mirada fija en mí."
+n "Tenía su mirada fija en mí."
 n "Era igual que la de Eren, llena de odio."
 n "Tomé mi posición de defensa."
 n "Pero esta vez tenía miedo, no tenía mi equipo tridimensional conmigo."
@@ -856,12 +854,11 @@ m "¡No puedes convertirte en titán solo para derrotarme!"
 n "Eren ignoró mis palabras."
 k "¡Ackerman! ¡Aléjese de Jaeger! ¡Ahora!"
 n "Gritó con desesperación al ver que Eren no se detenía."
-n "(Maldición)"
 play sound "corriendo.mp3"
 n "Comencé a correr."
 n "Ágilmente logré subirme a una edificación cercana y fijé mi mirada en Eren."
 with dissolve
-n "Mi cuerpo comenzó a temblar, logré divisarlos, los ojos verdes."
+n "Mi cuerpo comenzó a temblar, logré divisar sus ojos verdes."
 m "Ha perdido la razón..."
 m "Eren..."
 m "¡No otra vez!"
@@ -896,8 +893,8 @@ scene img2b
 play sound "oi levi.mp3"
 l "Eh, mocosa... ¿Estás bien?"
 n "Conocía perfectamente esa voz."
-n "Aún quejándome del dolor, comencé a abrir más los ojos."
-n "Me asombré por la persona que tenía a 5 cm de mí."
+n "Aún quejándome de dolor, comencé a abrir más los ojos."
+n "Me asombré por la persona que tenía tan cerca de mí."
 show img2b:
     xanchor 0 yanchor 0
     xpos 0 ypos -700
@@ -909,7 +906,7 @@ l "Te llevaré con Hange para que te revise completamente."
 m "¡No lo hagas!"
 n "Estaba totalmente avergonzada."
 m "No es necesario... Estoy bien..."
-n "Me volví a quejar del dolor."
+n "Me volví a quejar de dolor."
 play sound "mf.mp3"
 l "¡No desobedezcas, Ackerman!"
 l "¡Te llevaré con Hange y punto!"
@@ -923,12 +920,12 @@ show Levi normal c
 with dissolve
 l "Espero que hayas aprendido la lección, Mikasa..."
 n "Me miraba fíjamente mientras me hablaba."
-n "Realmente sus ojos eran lindos, eran de un tono azul muy oscuro."
+n "Realmente sus ojos eran lindos."
 show Levi normal2 c
 with dissolve
 with pixellate
 n "Parecían negros a simple vista, pero viéndolos más de cerca eran de un color azulado oscuro."
-n "Además, logré ver como suavizaba su rostro, podría decir que me miraba con cierta ternura y preocupación."
+n "Además, logré ver cómo suavizaban su rostro, podría decir que me miraba con cierta ternura y preocupación."
 with pixellate
 m "Sí, capitán..."
 m "Ya tomé una decisión..."

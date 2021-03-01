@@ -31,6 +31,12 @@ screen capitulos:
         ground "images/capitulos idle.png"
         hover "images/capitulos hover.png"
 
+        #return button
+        textbutton "{color=#FFFFFF}Volver{/color}":
+            action MainMenu()
+            xalign 0.5
+            yalign 0.98
+
         hotspot(199,133,203,171) action Jump("capitulo1")
         if(persistent.cap2 == True):
             hotspot(538,136,199,170) action Jump("capitulo2")

@@ -1,4 +1,4 @@
-image img1 = MaxScale("chisme.png")
+image img1 = MaxScale("chisme.jpg")
 image img1b = MaxScale("me.png")
 image img2 = MaxScale("pelea.png")
 image img2b = MaxScale("en brazos.png")
@@ -38,7 +38,7 @@ image black = "#000"
 
 image lockedthumb = MinScale("lala.jpg", maxthumbx, maxthumby)
 
-image thumb1 = MinScale("chisme.png", maxthumbx, maxthumby)
+image thumb1 = MinScale("chisme.jpg", maxthumbx, maxthumby)
 image thumb2 = MinScale("manon.png", maxthumbx, maxthumby)
 image thumb3 = MinScale("scrti.jpg", maxthumbx, maxthumby)
 image thumb4 = MinScale("bufanda.jpg", maxthumbx, maxthumby)

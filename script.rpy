@@ -226,39 +226,45 @@ label capitulo1:
     pause 26
     hide text
     scene img1
-    show chisme
     with dissolve
-    show text "{size=+30}{color=#000000}Sasha: ¡Ah! ¡Hola!{/size}{/color}" at truecenter
+    show text "{size=+30}{color=#000000}Sasha: ¡Ah! ¡Hola!{/size}{/color}" at truecenter:
+        xpos 0.5 ypos 900
     with dissolve
     pause 1
     hide text
     with dissolve
-    show text "{size=+30}{color=#000000}Sasha: ¿Me buscabas por algo?{/size}{/color}" at truecenter
+    show text "{size=+30}{color=#000000}Sasha: ¿Me buscabas por algo?{/size}{/color}" at truecenter:
+        xpos 0.5 ypos 900
     with dissolve
     pause 3
     hide text
     with dissolve
-    show text "{size=+30}{color=#000000}Eren: ¡Aquí estás! ¡Por fin!{/size}{/color}" at truecenter
+    show text "{size=+30}{color=#000000}Eren: ¡Aquí estás! ¡Por fin!{/size}{/color}" at truecenter:
+        xpos 0.5 ypos 900
     pause 1
     with dissolve
     hide text
     with dissolve
-    show text "{size=+30}{color=#000000}*Sasha: Ah, bueno... hoy no puede ser.*{/size}{/color}" at truecenter
+    show text "{size=+30}{color=#000000}*Sasha: Ah, bueno... hoy no puede ser.*{/size}{/color}" at truecenter:
+        xpos 0.5 ypos 900
     with dissolve
     pause 1
     hide text
     with dissolve
-    show text "{size=+30}{color=#000000}Sasha: Tengo que... ¡Sí! Tengo que... ¡Hacer algo! ¡Algo importante!{/size}{/color}" at truecenter
+    show text "{size=+30}{color=#000000}Sasha: Tengo que... ¡Sí! Tengo que... ¡Hacer algo! ¡Algo importante!{/size}{/color}" at truecenter:
+        xpos 0.5 ypos 900
     with dissolve
     pause 3
     hide text
     with dissolve
-    show text "{size=+30}{color=#000000}Eren: ¿Qué te pasa, Sasha? ¿Te duelen los dientes? De repente suenas rara...{/size}{/color}" at truecenter
+    show text "{size=+30}{color=#000000}Eren: ¿Qué te pasa, Sasha? ¿Te duelen los dientes? De repente suenas rara...{/size}{/color}" at truecenter:
+        xpos 0.5 ypos 900
     with dissolve
     pause 8
     hide text
     with dissolve
-    show text "{size=+30}{color=#000000}Sasha: ¡...! Eh... O sea... ¿Vale? Vamos a bordar este entrenamiento. ¿O no? Y después la hora de comer.{/size}{/color}" at truecenter
+    show text "{size=+30}{color=#000000}Sasha: ¡...! Eh... O sea... ¿Vale? Vamos a bordar este entrenamiento. ¿O no? Y después la hora de comer.{/size}{/color}" at truecenter:
+        xpos 0.5 ypos 900
     with dissolve
     pause 15
     hide text
@@ -339,10 +345,14 @@ menu:
     "...":
         show Eren normal s
         with dissolve
-        centered "{size=+25}{color=#A8A638}¡Bien, has ganado {color=#f00}+10 puntos{/color} por calmar a Eren!{/size}{/color}"
+        show text "{size=+20}{color=#EFC12D}¡Has ganado +10!{/size}{/color}" at truecenter:
+            xpos 402 ypos 60
+        with dissolve
         python:
             ErenAmizade += 10
         call chamarBarraMais(ErenAmizade)
+        with dissolve
+        hide text
         with dissolve
         n "Desde hace tiempo Eren comenzó a tratarme de esa forma: me gritaba, me empujaba, me hacía a un lado..."
         jump correc
@@ -350,12 +360,16 @@ menu:
     "¡Pero yo...!":
         show Eren enojado s
         with dissolve
-        centered "{size=+25}{color=#A8A638}¡Uy! ¡Has perdido {color=#f00}-10 puntos{/color} por hacer enojar a Eren!{/size}{/color}"
+        show text "{size=+20}{color=#EFC12D}¡Has perdido -10 puntos!{/size}{/color}" at truecenter:
+            xpos 402 ypos 60
+        with dissolve
         python:
             ErenAmizade -= 10
         call chamarBarraMenos(ErenAmizade)
         play sound "oi.mp3"
         with hpunch
+        hide text
+        with dissolve
         n "Recalqué colocando mis manos sobre sus hombros, pero él las quitó de inmediato bruscamente."
         n "Me miraba con desprecio y hasta podría decir que con odio."
         play sound "se realista.mp3"
@@ -447,10 +461,13 @@ menu:
     "Sí...":
         show Armin disgustado sce
         with dissolve
-        centered "{size=+25}{color=#A8A638}¡Bien, has obtenido {color=#f00}+10 puntos{/color} por decir la verdad!{/size}{/color}"
+        show text "{size=+20}{color=#EFC12D}¡Has obtenido +10 puntos!{/size}{/color}" at truecenter:
+            xpos 402 ypos 60
         python:
             ArminAmizade2 += 10
         call chamarBarraMais2(ArminAmizade2)
+        with dissolve
+        hide text
         with dissolve
         n "Por fin pude decirlo después de dar un largo suspiro."
         jump buena
@@ -458,10 +475,13 @@ menu:
     "Te equivocas.":
         show Armin enojado sce
         with dissolve
-        centered "{size=+25}{color=#A8A638}¡Uy! ¡Has perdido {color=#f00}-10 puntos{/color} por mentir a Armin!{/size}{/color}"
+        show text "{size=+20}{color=#EFC12D}¡Has perdido -10 puntos!{/size}{/color}" at truecenter:
+            xpos 402 ypos 60
         python:
             ArminAmizade2 -= 10
         call chamarBarraMenos2(ArminAmizade2)
+        with dissolve
+        hide text
         with dissolve
         show Armin disgustado sce
         with dissolve
@@ -790,6 +810,8 @@ with dissolve
 m "¿¡Dices que yo soy la ruda cuando tú empezaste a lanzar tus ataques directos a mi cara sin piedad!?"
 m "Eres bueno para quejarte porque yo sí logré darte un golpe..."
 m "¡Pero tú no lo lograste!"
+hide screen life_enemy
+with dissolve
 $contador = 35
 python:
     ErenAmizade -= 20
@@ -826,6 +848,8 @@ play audio "punch.mp3"
 with hpunch
 m "¿¡Pero qué...!?"
 n "No terminé de hablar ya que había salido disparada por el impacto de la transformación de Eren."
+hide screen life_player
+with dissolve
 show lili
 with fade
 play sound "corazon.mp3"

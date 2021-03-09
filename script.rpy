@@ -1001,13 +1001,13 @@ label capitulo2:
     z "En fin... parece ser que estábamos... bajo... equivocada..."
     n "..."
     play sound "Levi lilo.mp3"
-    l "Tch... ya ni siquiera...puedo..."
+    l "Tch... ya ni siquiera... puedo..."
     n "..."
-    n "Escuché dos voces lejanamente, pero no entendí lo que decían."
+    n "Escuché dos voces lejanas, pero no entendí lo que decían."
     define flashbulb = Fade(0.2, 0.0, 0.8, color='#fff')
     with flashbulb
-    n "Comencé a abrir pesadamente mis ojos, la luz no me permitía abrirlos completamente."
-    n "Con la poca visibilidad que tenía analicé el lugar donde estaba."
+    n "Comencé a abrir torpemente mis ojos, la luz no me permitía abrirlos completamente."
+    n "Con la poca visibilidad que tenía, analicé el lugar donde estaba."
     show iluminacion
     with fade
     scene lili
@@ -1017,11 +1017,11 @@ label capitulo2:
     show ilumi
     with fade
     n "Logré abrir por completo mis ojos e intenté levantarme de la cama."
-    n "Pero sentí un dolor insoportable cerca de mi abdomen, lo que provocó que cayera de nuevo en la cama."
+    n "Pero sentí un dolor insoportable cerca de mi abdomen, lo que provocó que cayera de nuevo sobre la cama."
     m "¡Ay!"
     n "Coloqué mis manos sobre la zona que me causaba dolor."
     play sound "puerta.mp3"
-    n "De repente escuché un crujido, levanté la mirada hacia donde había escuchado el ruido y vi cómo se abría la puerta, dejando ver quién entraba a la habitación."
+    n "De repente escuché un crujido, levanté la mirada hacia de donde el ruido y vi cómo se abría la puerta, dejando ver quién entraba a la habitación."
     with fade
     show Hange sorprendida1 s
     with dissolve
@@ -1037,7 +1037,7 @@ label capitulo2:
     n "Pasó sus manos suavemente sobre mis hombros y se recostó sobre la cama."
     n "Me quejé del dolor y me acomodé para no lastimarme más, después volteé a verla."
     m "¿Qué fue lo que sucedió Hange?"
-    z "¿No lo recuerdas Mikasa?"
+    z "¿No lo recuerdas, Mikasa?"
     m "Sí..."
     m "¿Cuánto tiempo llevo dormida?"
     show Hange insegura s
@@ -1046,7 +1046,7 @@ label capitulo2:
     show Hange hablando s
     with dissolve
     z "¡Tus heridas no son graves, solo necesitas reposar un día más!"
-    n "Se sentó en la silla con una exprexión alegre."
+    n "Se sentó en la silla con una expresión alegre."
     show Hange alegre s
     with dissolve
     z "Vaya, Mikasa... ¡Qué susto nos diste!"
@@ -1072,12 +1072,12 @@ label capitulo2:
             n "Me miraba sintiéndose orgullosa."
             show Hange alegre s
             with dissolve
-            z "Además de que Levi llegó a tiempo para evitar que cayeras."
+            z "Además, Levi llegó a tiempo para evitar que cayeras."
             n "Me sonrió y yo agaché la cabeza."
             show Hange normal s
             with dissolve
-            n "Aquello último provocó que me avergonzara, gracias a él no caí al suelo y seguía viva."
-            n "Pero me avergonzaba el hecho de que un hombre me hubiese cargado."
+            n "Aquello último provocó que me avergonzara. Gracias a él no caí al suelo y seguía viva."
+            n "Pero me avergonzaba que un hombre me hubiese cargado."
             n "Realmente era fuerte, no le oí quejarse de cargarme a pesar de su baja estatura..."
             n "Recordé sus ojos, aquellos ojos de un tono azul oscuro mirándome fijamente. Y su rostro..."
             n "Uno que mostraba en cierta forma preocupación y alivio."
@@ -1086,7 +1086,7 @@ label capitulo2:
             n "Ciertamente lo odiaba."
             n "¿La razón? Por cómo golpeó a Eren durante el juicio."
             n "Jamás se me borrarían esas ganas de regresarle cada uno de esos golpes que le dio a Eren."
-            n "“¿En serio? ¿Jamás lo perdonaría?”"
+            n "¿En serio? ¿Jamás lo perdonaría?"
             show Hange hablando s
             with dissolve
             z "¡Mikasa!"
@@ -1109,7 +1109,7 @@ label capitulo2:
             call chamarBarraMenos3(HanjiAmizade3)
             show Hange alegre s
             with dissolve
-            z "JAJAJAJA"
+            z "Jajajajaja."
             n "Fruncí el ceño."
             show Hange normal s
             with dissolve
@@ -1125,7 +1125,7 @@ label kike:
     play sound "toc toc.mp3"
     show Hange normal s
     with dissolve
-    n "De pronto oímos cómo alguien tocaba la puerta."
+    n "De repente oímos cómo alguien llamaba a la puerta."
     n "Hange se levantó y se dirigió a la puerta para abrirla."
     hide Hange normal s
     play sound "puerta.mp3"
@@ -1150,7 +1150,7 @@ label kike:
     m "Comandante..."
     show Erwim feliz s
     with dissolve
-    r "Ackerman... vine a ver cómo estabas... Pero veo que estas bien."
+    r "Ackerman, había venido a ver cómo estabas... Pero veo que estás bien."
     n "El comandante me sonrió."
     m "Sí, estoy bien, comandante... Gracias."
     n "Bajé la mirada y comencé a jugar con mis dedos."
@@ -1178,12 +1178,12 @@ label kike:
     n "Eren iba a ser asesinado por la policía militar cuando se enteraron de que era un titán."
     n "Se le permitió vivir gracias a la intervención de la Legión de Reconocimiento..."
     n "Selló la puerta en el muro de Trost..."
-    n "Aunque esto no definía si él seguiría vivo o no, dependía de.."
-    n "Del simple hecho de que no se trasformase en titán... a menos que fuera necesario."
+    n "Aunque esto no definía si él seguiría vivo o no."
+    n "Dependía del simple hecho de que no se trasformase en titán a menos que fuera necesario."
     n "Y que no perdiera el control y no atacará a sus subordinados."
     n "Lo cual, esta vez, Eren no cumplió."
-    n "Tenía la mirada perdida, no podía creer el hecho de que Eren podría ser asesinado por mi culpa."
-    n "Se suponía que yo debía protegerlo y cuidarlo, y fui yo quien lo estaba llevando a su muerte."
+    n "Tenía la mirada perdida, no podía creer que Eren podría ser asesinado por mi culpa."
+    n "Se suponía que yo debía protegerlo y cuidarlo, pero era yo quien lo estaba llevando a su muerte."
     r "Ackerman, esto no es su culpa."
     n "Interrumpió mis pensamietos al ver que no respondía."
     r "Jaeger actuó por impulso y no pudo controlar su poder."
@@ -1194,7 +1194,7 @@ label kike:
     show Erwin incomodo2 s
     with dissolve
     n "Bajó la mirada en señal de culpa."
-    r "No nos queda de otra que aceptar el juicio y tener la posibilidad de perder la custodia de Jaeger y que sea asesinado."
+    r "No nos queda de otra que aceptar el juicio, tener la posibilidad de perder la custodia de Jaeger, y que sea asesinado."
     n "Terminó de hablar mirándome fijamente."
     hide Erwin incomodo2 s
     hide Erwim feliz s
@@ -1216,12 +1216,12 @@ label kike:
     with dissolve
     z "Debes tranquilizarte o te pondrás mal... Por favor..."
     play sound "puerta.mp3"
-    n "De pronto se escuchó un crujido, alguien había abierto la puerta de la habitación nuevamente."
+    n "De repente se escuchó un crujido, alguien había abierto la puerta de la habitación nuevamente."
     hide Hange insegura s
     with dissolve
     show Levi normal s
     with dissolve
-    l "Erwin, el comandante Pixis te espera en tu oficina."
+    l "Erwin, el comandante Pixis te espera en su oficina."
     hide Levi normal s
     with dissolve
     show Erwin incomodo1 s
@@ -1292,7 +1292,7 @@ label kike:
     play music "WYS - Snowman.mp3"
     n "El ambiente se puso tenso, por un momento olvidé la noticia."
     n "Era realmente incómodo: jamás me había sentido en un ambiente así, me sentía avergonzada."
-    n "No quería levantar la mirada, no entendía que era lo que me pasaba."
+    n "No quería levantar la mirada, no entendía qué era lo que me pasaba."
     n "Mi corazón comenzó a acelerarse, sentí mi cara caliente y mis manos estaban temblando."
     n "No podía decir nada, tampoco podía levantar la vista."
     show Levi hablando s
@@ -1318,13 +1318,13 @@ label kike:
     show Levi normal s
     with dissolve
     n "Se sentó en la silla cruzado de brazos."
-    n "Comencé a tranquilizarme. El color rojo de mi cara ya había desaparecido, también ya habían dejado de temblar mis manos."
+    n "Comencé a tranquilizarme. El color rojo de mi cara ya había desaparecido y mis manos ya habían dejado de temblar."
     n "Respiré profundo dando largos suspiros."
     show Levi tranquilo s
     with dissolve
-    n "Me acomodé nuevamente en la cama, colocando mi espalda en el respaldo y volteé a verlo."
+    n "Me acomodé nuevamente en la cama, colocando mi espalda en el respaldo, y volteé a verlo."
     n "Estaba sentado en aquella silla de brazos cruzados y con la cabeza hacia atrás, daba largos suspiros y tenía cerrados los ojos."
-    n "Miré su rostro con detenimiento, se veía relajado, pero con su expresión de siempre: serio."
+    n "Miré su rostro con detenimiento. Se veía relajado, pero serio, como siempre solía estar."
     n "Con su típica cara amargada, me preguntaba si no tenía otra expresión que mostrar aparte de esa."
     n "Su piel era clara y suave, se notaba que era un tipo loco de la limpieza que hasta su cuerpo lo representaba."
     n "No estaba mal del todo, sonreí inconscientemente."
@@ -1343,8 +1343,8 @@ label kike:
     l "No tienes que perder tu orgullo por agradecerme."
     n "Enderezó su cabeza y me miró fijamente con una sonrisa burlona."
     n "Me sobresaltó su comentario y lo miré enojada. Realmente lo odiaba, me había hecho enojar con su comentario."
-    n "Si no hubiera sido por mi herida ya me habría levantado y le habría dado un buen golpe por burlarse de mí de esa manera."
-    n "Voté por fijar mi mirada a otro lado cruzándome de brazos."
+    n "Si no hubiera sido por mi herida, ya me habría levantado y le habría dado un buen golpe por burlarse de mí de esa manera."
+    n "Opté por fijar mi mirada en otro punto cruzándome de brazos."
     n "Se suponía que debía estar enojada, pero aquella sonrisa me había provocado otra cosa, me había hecho sonrojar."
     m "Idiota..."
     show Levi hablando s
@@ -1356,7 +1356,7 @@ label kike:
     show Levi tranquilo s
     with dissolve
     n "Volví a sobresaltarme."
-    n "Volteé a verlo nuevamente y seguía en la misma posición de antes."
+    n "Volteé a verlo nuevamente y seguía con la misma posición de antes."
     m "¿Tienes algún problema conmigo?"
     m "Tan solo te agradecí por salvarme..."
     show Levi suave2 s
@@ -1377,7 +1377,7 @@ label kike:
     with dissolve
     n "Levantó la mirada sorprendido."
     m "Yo soy alguien de la élite."
-    m "Valgo por 100 soldados."
+    m "Valgo por cien soldados."
     n "Lo miré sonriendo con orgullo."
     show Levi feliz s
     with dissolve
@@ -1394,19 +1394,19 @@ label kike:
     n "Inconscientemente sonreí."
     n "Él era igual a mí, tenía su orgullo. Se quejaba de todo aquello que le molestaba mostrando una actitud indiferente."
     n "Odiaba estar rodeado de gente y prefería estar solo, igual que yo."
-    n "Tenía grandes habilidades y era realmente fuerte y ágil, no por algo era llamado ¨el hombre más fuerte de la humanidad¨."
+    n "Tenía grandes habilidades y era realmente fuerte y ágil, no por nada era llamado «el hombre más fuerte de la humanidad»."
     show Levi normal s
     with dissolve
     l "Eh, Ackerman..."
-    n "Llamó mi atención sacándome mis pensamientos."
+    n "Llamó mi atención sacándome de mis pensamientos."
     show Levi hablando s
     with dissolve
-    l "¿Qué piensas hacer con lo de Jaeger?"
+    n "Me estaba mirando fijamente."
     show Levi normal s
     with dissolve
 
     menu:
-        n "Me estaba mirando fijamente."
+        l "¿Qué piensas hacer con lo de Jaeger?"
 
         "No lo sé...":
             centered "{size=+25}{color=#A8A638}¡{color=#f00}+5p{/color}!{/size}{/color}"
@@ -1415,7 +1415,7 @@ label kike:
             call chamarBarraMais4(LeviAmizade4)
             with dissolve
             n "Instintivamente tomé la bufanda de mi cuello y oculté parte de mi rostro en ella, podía percibir el olor de Eren en ella."
-            n "Mis mejillas se sonrojaron y lágrimas comenzaron a caer de mi rostro."
+            n "Mis mejillas se sonrojaron y lágrimas comenzaron a resbalar por mi rostro."
             show Levi normal s
             with dissolve
             l "Ya veo."
@@ -1424,9 +1424,9 @@ label kike:
             n "Lo miré con preocupación."
             show Levi sorpendido s
             with dissolve
-            l "¿Ah?"
+            l "¿Eh?"
             n "Esta vez me miraba extrañado."
-            l "¿Por que tendría yo que ayudarte?"
+            l "¿Por qué tendría yo que ayudarte?"
             m "Me obligarán a decir la verdad en el juicio..."
             n "Limpié mis lágrimas."
             show Levi tranquilo s
@@ -1442,8 +1442,8 @@ label kike:
             n "Ambos alzamos los ojos al mismo tiempo, centrándonos en la mirada del otro."
             n "Sus oscuros ojos azules me miraban atentamente."
             n "Sus ojos decían más que mil palabras."
-            n "Con su mirada podía entender cómo era él, como era el capitán Levi."
-            n "Todos esos sentimientos escondidos bajo aquella aburrida y continua mirada seria y actitud amargada."
+            n "Con su mirada podía entender cómo era él, cómo era el capitán Levi."
+            n "Todos esos sentimientos escondidos bajo aquella aburrida y continua mirada seria y actitud amargada..."
             show Levi normal s
             with dissolve
             l "De acuerdo."
@@ -1455,9 +1455,9 @@ label kike:
             n "Él solo volteó la mirada a otra dirección."
             n "¿Estaba avergonzado? Estaba igual que yo cuando entró a la habitación."
             n "No entendía qué era lo que me provocaba cuando lo veía."
-            n "Sentía mis manos temblar y me daba pena mirarle a los ojos."
-            n "Además, mirarle a los ojos me provocaba seguridad, pero también querer conocerlo más..."
-            n "Conocer su pasado."
+            n "Sentía mis manos temblar y me daba vergüenza mirarle a los ojos."
+            n "Aunque... mirarle a los ojos me provocaba seguridad, pero también querer conocerlo más..."
+            n "Conocer su pasado..."
             n "Conocer por qué siempre actuaba así, por qué era indiferente a las cosas."
             n "Cómo es que se había vuelto tan fuerte y cómo podía demostrar tener un corazón inquebrantable."
             n "Daría lo que fuera por conocerlo más, pero debe poner de su parte también para que pueda hacerlo."
@@ -1504,11 +1504,11 @@ label kike:
             m "Gracias a él volví a vivir en este mundo cruel..."
             n "Mi voz se quebró."
             n "Ciertamente Eren había cambiado su forma de ser conmigo."
-            n "Al punto de incluso poder matarme en forma de titán, pero, tal y como se lo había dicho a Armin."
+            n "Al punto de incluso poder matarme en forma de titán, pero, tal y como se lo había dicho a Armin..."
             n "Eren era mi única familia y siempre le estaría agradecida por haberme salvado de aquellos secuestradores y darme una segunda oportunidad de vivir."
             n "Instintivamente tomé la bufanda de mi cuello y oculté parte de mi rostro en ella, podía percibir el olor de Eren en ella."
             play sound "llorando mikasa 1.mp3"
-            n "Mis mejillas se sonrojaron y lágrimas comenzaron a caer de mi rostro."
+            n "Mis mejillas se sonrojaron y lágrimas comenzaron a resbalar por mi rostro."
             show Levi normal2 s
             with dissolve
             l "Es estúpido que llores por ese mocoso."
@@ -1524,11 +1524,11 @@ label kike:
             m "Lo sé."
             n "Limpié mis lágrimas."
             m "Pero prometí que lo protegería incluso con mi vida..."
-            n "Paré un momento para recordar el por qué decía esto y proseguí."
+            n "Paré un momento para recordar por qué decía eso y proseguí."
             m "Se lo prometí a Carla..."
             l "¿Carla?"
             m "Ese era el nombre de la madre de Eren, la mujer que me adoptó después de perder a mis padres..."
-            n "Sentí que la nostalgia llegaba a mis ojos provocándome lágrimas."
+            n "Sentí que la nostalgia llegaba a mis ojos haciéndome llorar."
             m "Me hizo prometerle que siempre cuidaría de Eren..."
             show Levi tranquilo s
             with dissolve
@@ -1539,9 +1539,9 @@ label kike:
             n "Lo miré con preocupación."
             show Levi sorpendido s
             with dissolve
-            l "¿Ah?"
+            l "¿Eh?"
             n "Esta vez me miró extrañado."
-            l "¿Porque tendría yo que ayudarte?"
+            l "¿Por qué tendría yo que ayudarte?"
             m "Me obligarán a decir la verdad en el juicio..."
             show Levi normal2 s
             with dissolve
@@ -1555,7 +1555,7 @@ label kike:
             m "Se lo suplico..."
             n "Tomé una de sus manos."
             m "Será lo único que le pediré en mi vida."
-            n "Me miró sorprendido, bajó la mirada para ver cómo una de mis manos tomaba la suya."
+            n "Me miró sorprendido y bajó la mirada para ver cómo una de mis manos tomaba la suya."
             n "Apretó con fuerza mi mano y volteé a verlo sorprendida."
             n "Ambos alzamos los ojos al mismo tiempo, centrándonos en la mirada del otro."
             n "Sus oscuros ojos azules me miraban atentamente."

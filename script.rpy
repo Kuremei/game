@@ -1059,11 +1059,14 @@ label capitulo2:
         n "Regresé mi mirada a Hange, tenía muchas cosas que preguntarle."
 
         "No entiendo a qué te refieres":
-            centered "{size=+25}{color=#A8A638}¡{color=#f00}+10p{/color}!{/size}{/color}"
+            show text "{size=+10}{color=#010104}¡Has obtenido +10 puntos!{/size}{/color}" at truecenter:
+                xpos 440 ypos 190
             python:
                 HanjiAmizade3 += 10
             call chamarBarraMais3(HanjiAmizade3)
             show Hange normal s
+            with dissolve
+            hide text
             with dissolve
             z "Me refiero a que no te pasó nada grave."
             z "El hecho de que Eren, transformado en titán, te atacase sin tu equipo y salieses viva es algo digno de admirar."
@@ -1103,7 +1106,8 @@ label capitulo2:
             jump kike
 
         "¿Cómo que solo fue un susto?":
-            centered "{size=+25}{color=#A8A638}¡{color=#f00}-5p{/color}!{/size}{/color}"
+            show text "{size=+10}{color=#010104}¡Has perdido -5 puntos!{/size}{/color}" at truecenter:
+                xpos 440 ypos 190
             python:
                 HanjiAmizade3 -= 5
             call chamarBarraMenos3(HanjiAmizade3)
@@ -1115,6 +1119,8 @@ label capitulo2:
             with dissolve
             z "Me refiero a que no te pasó nada grave."
             hide screen barraAmizade3
+            with dissolve
+            hide text
             with dissolve
             z "El hecho de que Eren, transformado en titán, te atacase sin tu equipo y salieses viva es algo digno de admirar."
             n "Me miraba sintiéndose orgullosa."
@@ -1409,10 +1415,13 @@ label kike:
         l "¿Qué piensas hacer con lo de Jaeger?"
 
         "No lo sé...":
-            centered "{size=+25}{color=#A8A638}¡{color=#f00}+5p{/color}!{/size}{/color}"
+            show text "{size=+10}{color=#010104}¡Has obtenido +5 puntos!{/size}{/color}" at truecenter:
+                xpos 440 ypos 190
             python:
                 LeviAmizade4 += 5
             call chamarBarraMais4(LeviAmizade4)
+            with dissolve
+            hide text
             with dissolve
             n "Instintivamente tomé la bufanda de mi cuello y oculté parte de mi rostro en ella, podía percibir el olor de Eren en ella."
             n "Mis mejillas se sonrojaron y lágrimas comenzaron a resbalar por mi rostro."
@@ -1494,10 +1503,14 @@ label kike:
             return
 
         "No quiero que lo maten...":
-            centered "{size=+25}{color=#A8A638}¡{color=#f00}+10p{/color}!{/size}{/color}"
+            show text "{size=+10}{color=#010104}¡Has obtenido +10 puntos!{/size}{/color}" at truecenter:
+                xpos 440 ypos 190
             python:
                 LeviAmizade4 += 10
             call chamarBarraMais4(LeviAmizade4)
+            with dissolve
+            hide text
+            with dissolve
             n "Agaché mi cabeza."
             play sound "mi unica familia.mp3"
             m "Es mi única familia."
